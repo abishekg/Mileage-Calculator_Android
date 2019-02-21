@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.abishekg.mileagecalculator.Activities.ProfileDetailsActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayoutToolBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:textAlignment="center"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical|start"
+            android:elevation="4dp"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/backPress"
+                    android:src="@drawable/back"
+                    android:layout_marginStart="0dp"
+                    android:background="?android:selectableItemBackground"
+                    android:onClick="backPress"
+                    />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/add"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitXY"
+                    android:background="@android:color/transparent"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="1dp"
+                    android:onClick="addTripImageClick" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/r3_profiledetails">
+
+        <TextView
+            android:id="@+id/makeText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#CFD8DC"
+            android:lines="1"
+            android:maxWidth="180dp"
+            android:text="VehicleMakasdfgafagfasgdde"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/licensePlateText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="License Plate"
+            android:background="#CFD8DC"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/insuranceText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/licensePlateText3"
+            android:layout_marginTop="5dp"
+            android:maxWidth="180dp"
+            android:lines="1"
+            android:text="InsuranceNdfhfhdfhdfhhdfhumber"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+
+
+        <TextView
+            android:id="@+id/insuranceExpiryText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="180dp"
+            android:lines="1"
+            android:layout_alignBaseline="@+id/insuranceText3"
+            android:layout_alignBottom="@+id/insuranceText3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Insurancexpirygdfhfhdfhdfhdh Date"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:weightSum="100">
+
+
+        <TextView
+            android:id="@+id/tripNumberText4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Trip Number"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_weight="25"/>
+
+        <TextView
+            android:id="@+id/odoReadText4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Odometer Reading"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_weight="25"/>
+
+
+
+        <TextView
+            android:id="@+id/fuelAddedText4"
+            android:layout_width="0dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:text="Fuel Refilled"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_weight="25"/>
+
+        <TextView
+            android:id="@+id/currentMileageText4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Current Mileage"
+            android:textAlignment="center"
+            android:background="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_weight="25"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scrollbars="vertical"
+            tools:ignore="NotSibling" />
+    </RelativeLayout>
+</LinearLayout>

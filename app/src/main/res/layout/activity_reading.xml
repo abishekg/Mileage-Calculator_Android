@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.abishekg.mileagecalculator.Activities.ReadingActivity">
+
+    <TextView
+        android:id="@+id/appNameText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:singleLine="true"
+        android:text="Trip Details"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/r3_readingactivity_odoMeter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignBaseline="@+id/appNameText"
+        android:layout_marginTop="50dp">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/odometerText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat.Base">
+
+
+            <EditText
+                android:id="@+id/odometerReadingEdit4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/appNameText"
+                android:layout_below="@+id/r3_readingactivity_odoMeter"
+                android:layout_centerHorizontal="true"
+                android:hint="Odometer Reading*"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/r3_readingactivity_fuelRefil3"
+        android:layout_marginTop="10dp"
+        android:layout_alignBaseline="@+id/r3_readingactivity_odoMeter" />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/fuelRefilText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat.Base">
+
+        <EditText
+            android:id="@+id/fuelRefillEdit4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fuel Refill*"
+            android:inputType="number"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/saveButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="calculateClick"
+        android:text="Calculate" />
+
+    <Button
+        android:id="@+id/cancelButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:onClick="cancelClick"
+        android:text="Cancel"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Disclaimer \n *Mandatory Fields     " />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

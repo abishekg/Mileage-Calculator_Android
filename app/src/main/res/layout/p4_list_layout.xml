@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#CFD8DC"
+    android:layout_margin="1dp"
+    android:weightSum="8">
+
+
+    <TextView
+        android:id="@+id/tripNumberText4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Trip Number"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:lines="1"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:id="@+id/odoReadText4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Odometer Reading"
+        android:textAlignment="center"
+        android:lines="1"
+        android:textSize="18sp"
+        android:layout_weight="2"/>
+
+
+
+    <TextView
+        android:id="@+id/fuelAddedText4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Fuel Quantity"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:lines="1"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:id="@+id/currentMileageText4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Current Mileage"
+        android:lines="1"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_weight="2"/>
+</LinearLayout>

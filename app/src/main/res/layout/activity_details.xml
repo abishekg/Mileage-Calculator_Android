@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE"
+    tools:context="com.example.abishekg.mileagecalculator.Activities.DetailsActivity">
+
+    <TextView
+        android:id="@+id/appNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:singleLine="false"
+        android:text="Register Yourself"
+        android:textSize="25sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_detailactivity_name">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat.Base">
+
+            <EditText
+                android:id="@+id/nameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name*"
+
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_detailactivity_dob">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dobText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat.Base">
+
+            <EditText
+                android:id="@+id/dobEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date Of Birth"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_detailactivity_make">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/vMakeText"
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat.Base">
+
+            <EditText
+                android:id="@+id/vMakeEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vehicle Make*"
+                android:inputType="textPersonName"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_detailactivity_model">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/vModelText"
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat.Base">
+
+            <EditText
+                android:id="@+id/vModelEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vehicle Model*"
+                android:inputType="textPersonName"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/vFuelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/petrolCheckBox"
+        android:text=" Fuel Type*"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/fuelTypeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/petrolCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Petrol" />
+
+        <RadioButton
+            android:id="@+id/dieselCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vModelEdit"
+            android:text="Diesel" />
+    </RadioGroup>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_detailactivity_licenseplate">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/licensePlateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat.Base">
+
+            <EditText
+                android:id="@+id/licensePlateEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="License Plate*"
+                android:capitalize="characters"
+                android:textAllCaps="true"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_detailactivity_insnum">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/insNumText"
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat.Base">
+
+            <EditText
+                android:id="@+id/insNumEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Insurance Number"
+                android:inputType="textPersonName"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_detailactivity_insexp">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/insExpText"
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.AppCompat.Base">
+
+            <EditText
+                android:id="@+id/insExpEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Insurance Expiry Date"
+                android:inputType="date"
+                android:clickable="true"
+                android:focusable="false"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/distText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text=" Distance In*"
+        android:textSize="18sp" />
+    
+    <RadioGroup
+        android:id="@+id/distanceRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/kmRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:checked="true"
+        android:text="Km" />
+
+    <RadioButton
+        android:id="@+id/milesRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miles" />
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="resetClick"
+        android:text="Reset" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:onClick="submitClick"
+            android:layout_toRightOf="@id/resetButton"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/addAnotherButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:fontFamily="sans-serif-condensed"
+            android:textAlignment="center"
+            android:gravity="right"
+            android:layout_toRightOf="@id/submitButton"
+            android:onClick="addAnotherClick"
+            android:text="Add Another Vehicle" />
+        </LinearLayout>
+
+<TextView
+    android:id="@+id/disclaimerText1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="*Mandatory Fields"/>
+
+</LinearLayout>
+</ScrollView>
